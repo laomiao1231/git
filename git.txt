@@ -28,3 +28,14 @@ git log -p filename 查看某个文件的提交记录
 git log --graph --pretty=oneline --abbrev-commit 查看分支合并情况
 git remote -v 查看远程库信息
 git commit --amend 修改错误的注释 按字母c进去编辑状态  按ESC退出编辑状态，接着连按字母ZZ保存退出 如果push之后更改，需要重新push
+
+
+.gitignore配置
+	*.css 忽略以css结尾的文件
+	dist/ 忽略dist目录下的文件
+	/dist/ 不提交dist文件夹
+	!*.txt 不忽略文件
+	
+	
+解决冲突：
+首先从主分支上拉取代码，查看冲突文件和冲突的部分，解决冲突，重新提交即可
