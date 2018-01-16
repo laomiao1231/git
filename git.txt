@@ -1,4 +1,4 @@
-git add .  添加文件下所有更改的文件
+﻿git add .  添加文件下所有更改的文件
 git commit -m "test" 将文件添加到暂存区，-m后的参数必须添加
 git config --global color.ui true  设置Git面板颜色
 git config --global user.name "youname" 配置全局的用户名
@@ -29,13 +29,12 @@ git log --graph --pretty=oneline --abbrev-commit 查看分支合并情况
 git remote -v 查看远程库信息
 git commit --amend 修改错误的注释 按字母c进去编辑状态  按ESC退出编辑状态，接着连按字母ZZ保存退出 如果push之后更改，需要重新push
 
-
 .gitignore配置
 	*.css 忽略以css结尾的文件
 	dist/ 忽略dist目录下的文件
 	/dist/ 不提交dist文件夹
-	!*.txt 不忽略文件
-	
+	!*.txt 不忽略文件	
 	
 解决冲突：
 首先从主分支上拉取代码，查看冲突文件和冲突的部分，解决冲突，重新提交即可
+Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容
