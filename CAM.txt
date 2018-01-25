@@ -14,9 +14,9 @@ dormitory：
 register：
 	register_name register_company register_start_time register_end_time
 	来访者姓名  所属单位   开始时间  结束时间
-lost_property
-	lost_property_date lost_property_describe
-	发布时间   描述信息
+lost_items
+	lost_items_date lost_items_describe lost_items_status
+	发布时间   描述信息   状态 
 /*********表关系*********/
 admin分为普通管理员和超级管理员
 user_account 为学号（暂定）

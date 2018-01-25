@@ -26,6 +26,7 @@ git reflog 查看命令历史记录，确定要回退的版本
 git diff HEAD -- readme.txt  查看工作区和版本库里面最新版本的区别
 git reset HEAD file   把暂存区的修改撤销掉
 git rm test.txt  git commit -m "remove test.txt" 从版本库删除文件
+git rm -r --cached "CAM.iml"  git commit  git push  从远程库中删除文件 
 ssh-keygen -t rsa -C "youremail@example.com"  生成SSH key
 git push -u origin master 第一次推送master分支的所有内容
 git diff HEAD -- file 查看工作区和版本库里面最新版本的区别
