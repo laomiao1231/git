@@ -1,4 +1,4 @@
-/********表设计***********/
+﻿/********表设计***********/
 admin: 
 	admin_account admin_password admin_power admin_status
 	账户  密码  等级  状态
@@ -22,3 +22,5 @@ admin分为普通管理员和超级管理员
 user_account 为学号（暂定）
 宿舍与学生为一对多
 员工和宿舍是一对多
+
+
