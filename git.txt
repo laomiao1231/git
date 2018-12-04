@@ -47,3 +47,5 @@ git log --author="username" --pretty=tformat: --numstat | awk '{ add += $1; subs
 解决冲突：
 首先从主分支上拉取代码，查看冲突文件和冲突的部分，解决冲突，重新提交即可
 Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容
+
+1112
