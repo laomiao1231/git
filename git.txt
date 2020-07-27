@@ -37,6 +37,10 @@ git remote add origin git@github.com:laomiao1231/xxx.git  添加远程仓库
 git remote -v 查看远程库信息
 git commit --amend 修改错误的注释 按字母c进去编辑状态  按ESC退出编辑状态，接着连按字母ZZ保存退出 如果push之后更改，需要重新push
 git reset --soft HEAD^  撤销commit, 保留代码
+/********项目切换仓库start*********/
+git clone --bare 旧的git地址
+git push --mirror 新的git地址
+/********项目切换仓库end**********/
 git log --author="username" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -  统计提交的代码量
 
 .gitignore配置
@@ -44,15 +48,3 @@ git log --author="username" --pretty=tformat: --numstat | awk '{ add += $1; subs
 	dist/ 忽略dist目录下的文件
 	/dist/ 不提交dist文件夹
 	!*.txt 不忽略文件	
-	
-
-解决冲突：
-首先从主分支上拉取代码，查看冲突文件和冲突的部分，解决冲突，重新提交即可
-Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容
-
-<<<<<<< HEAD
-1112
-=======
-
-1212
->>>>>>> 7ce9c6bbc99c4823378729b0b40bec80d75a92f8
