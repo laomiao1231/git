@@ -48,3 +48,16 @@ git log --author="username" --pretty=tformat: --numstat | awk '{ add += $1; subs
 	dist/ 忽略dist目录下的文件
 	/dist/ 不提交dist文件夹
 	!*.txt 不忽略文件	
+	
+	
+	
+解决冲突：
+首先从主分支上拉取代码，查看冲突文件和冲突的部分，解决冲突，重新提交即可
+Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容
+
+<<<<<<< HEAD
+1112
+=======
+
+1212
+>>>>>>> 7ce9c6bbc99c4823378729b0b40bec80d75a92f8
